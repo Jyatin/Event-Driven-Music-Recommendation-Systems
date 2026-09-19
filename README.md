@@ -6,8 +6,8 @@
 
 <p align="center">
   <a href="./Event-Driven%20Music%20Recommendation%20Systems%20-%20IEEE%20Format.pdf">📄 Read the Paper</a> •
-  <a href="https://lnkd.in/d6j6HcFR">🔗 Interactive Case Study</a> •
-  <a href="https://www.linkedin.com/in/jyatinsingh/">💼 LinkedIn</a>
+  <a href="https://lnkd.in/d6j6HcFR">🔗 Interactive Artifact</a> •
+  <a href="https://lnkd.in/p/dUQGTERM">💼 LinkedIn Post</a>
 </p>
 
 ---
@@ -16,9 +16,9 @@
 
 This repository contains the technical paper and supporting material for a **reference architecture for scalable, fresh, and low-latency music recommendation**.
 
-The case study explores how an event-driven pipeline can connect continuous user interactions with real-time processing, offline machine-learning workflows, candidate generation, ranking, re-ranking, and recommendation serving.
+The case study explores how an event-driven pipeline connects continuous user interactions with real-time processing, offline machine-learning workflows, candidate generation, ranking, re-ranking, and recommendation serving.
 
-> **Note:** This work is a technical case study and reference-architecture proposal. It does not claim to reproduce any proprietary production system.
+> **Note:** This is a technical case study and reference-architecture proposal. It does not claim to reproduce any proprietary production system.
 
 ## 📄 Research Paper
 
@@ -88,9 +88,9 @@ The work examines the trade-offs involved in building recommendation systems aro
 
 ## 🧪 Proof of Concept
 
-The paper includes a proof-of-concept that exercises the recommendation scoring mechanism using **synthetic interaction data**.
+The paper includes a proof-of-concept using **synthetic interaction data** to exercise the recommendation scoring mechanism.
 
-The results should therefore be interpreted as a validation of the scoring mechanics rather than as production performance benchmarks.
+The results should therefore be interpreted as validation of the scoring mechanics rather than as production performance benchmarks.
 
 ## ⚠️ Scope & Limitations
 
@@ -100,15 +100,14 @@ The results should therefore be interpreted as a validation of the scoring mecha
 - Real-world recommendation quality, latency, and scalability would require implementation and evaluation using realistic or production-scale interaction data.
 - Public information about Spotify is used only as a motivating reference; proprietary internal implementation details are not claimed.
 
-## 🔗 Resources
+## 🔗 Links & Artifacts
 
 | Resource | Link |
 |---|---|
 | 📄 **Technical Paper** | [Open PDF](./Event-Driven%20Music%20Recommendation%20Systems%20-%20IEEE%20Format.pdf) |
-| 🖥️ **Interactive Case Study** | [Open Case Study](https://lnkd.in/d6j6HcFR) |
-| 💼 **LinkedIn Profile** | [Jyatin Kumar Singh](https://www.linkedin.com/in/jyatinsingh/) |
-
-> **LinkedIn Post:** Add the published post URL here when the post is live. The currently available `lnkd.in/d6j6HcFR` link is kept as the interactive case-study link.
+| 🔗 **Interactive Artifact / Case Study** | [Open Artifact](https://lnkd.in/d6j6HcFR) |
+| 💼 **LinkedIn Post** | [View LinkedIn Post](https://lnkd.in/p/dUQGTERM) |
+| 👤 **LinkedIn Profile** | [Jyatin Kumar Singh](https://www.linkedin.com/in/jyatinsingh/) |
 
 ## 👤 Author
 
@@ -123,5 +122,5 @@ B.Tech CSE · Lovely Professional University
 ---
 
 <p align="center">
-  <sub>Built as a technical research case study on event-driven recommendation architecture.</sub>
+  <sub>Technical research case study on event-driven recommendation architecture.</sub>
 </p>
