@@ -1,79 +1,127 @@
-# Event-Driven Music Recommendation Systems
+# 🎧 Event-Driven Music Recommendation Systems
 
-> A technical case study on designing scalable, real-time music recommendation systems using Apache Kafka, event-driven architecture, stream processing, and machine learning.
+<p align="center">
+  <strong>A scalable, real-time recommendation architecture powered by event-driven systems, Apache Kafka, stream processing, and machine learning.</strong>
+</p>
 
-## 📄 Paper & Resources
-
-- **[Read / View the Full Technical Paper (PDF)](./Event-Driven%20Music%20Recommendation%20Systems%20-%20IEEE%20Format.pdf)**
-- **[Interactive Case Study](https://lnkd.in/d6j6HcFR)**
-- **[LinkedIn Profile](https://www.linkedin.com/in/jyatinsingh/)**
-- **LinkedIn Post:** Add the specific post URL here once published.
-
-## Overview
-
-This paper presents a reference architecture for scalable, fresh, and low-latency music recommendation using an event-driven design centered on **Apache Kafka**, distributed processing, and machine-learned ranking.
-
-The architecture separates event ingestion, real-time stream processing, offline batch processing, candidate generation, ranking, re-ranking, and recommendation serving into independently scalable stages.
-
-## Key Areas
-
-- Event-driven architecture
-- Apache Kafka and durable event streaming
-- Real-time and offline recommendation pipelines
-- Candidate generation and retrieval
-- Machine-learned ranking and re-ranking
-- Low-latency personalization
-- Scalability and reliability
-- Recommendation freshness and diversity
-- Offline evaluation and ranking metrics
-
-## Architecture
-
-The proposed design connects a durable event stream with both real-time and offline processing paths. User interactions such as plays, skips, saves, searches, and completions can be transformed into features and signals for candidate generation and ranking.
-
-The system emphasizes independent scaling of ingestion, processing, recommendation, and serving components while maintaining a shared event history.
-
-## Technology Stack
-
-| Technology / Concept | Role |
-|---|---|
-| **Apache Kafka** | Event streaming and durable event log |
-| **Stream Processing** | Real-time interaction and feature processing |
-| **Batch Processing** | Offline feature generation and model training |
-| **Machine Learning** | Personalization and ranking |
-| **Learning-to-Rank** | Recommendation ranking and re-ranking |
-| **Recommendation Systems** | Candidate retrieval and personalized serving |
-
-## Scope & Limitations
-
-This work is a **technical case study and reference-architecture proposal**, not a report of a completed production deployment. Spotify is used as a motivating public example; the proposed architecture does not claim to reproduce Spotify's proprietary internal systems.
-
-The proof-of-concept uses synthetic interaction data. Scalability, latency, and recommendation quality are therefore discussed as architectural considerations rather than production benchmark results.
-
-## Research Focus
-
-The paper explores how event-driven systems can support continuous personalization while balancing:
-
-- Relevance
-- Freshness
-- Diversity
-- Novelty
-- Reliability
-- Scalability
-- Latency
-
-It also discusses candidate generation, ranking, re-ranking, evaluation methodology, and popularity-bias considerations.
-
-## Author
-
-**Jyatin Kumar Singh**  
-B.Tech CSE — Lovely Professional University  
-2026
-
-## Citation
-
-**Singh, Jyatin Kumar.** *Event-Driven Music Recommendation Systems: A Technical Case Study of Spotify-Style Recommendation Architecture Using Apache Kafka, Big Data and Machine Learning.* Lovely Professional University, 2026.
+<p align="center">
+  <a href="./Event-Driven%20Music%20Recommendation%20Systems%20-%20IEEE%20Format.pdf">📄 Read the Paper</a> •
+  <a href="https://lnkd.in/d6j6HcFR">🔗 Interactive Case Study</a> •
+  <a href="https://www.linkedin.com/in/jyatinsingh/">💼 LinkedIn</a>
+</p>
 
 ---
 
-If you find this work useful, feel free to ⭐ the repository.
+## 📌 About
+
+This repository contains the technical paper and supporting material for a **reference architecture for scalable, fresh, and low-latency music recommendation**.
+
+The case study explores how an event-driven pipeline can connect continuous user interactions with real-time processing, offline machine-learning workflows, candidate generation, ranking, re-ranking, and recommendation serving.
+
+> **Note:** This work is a technical case study and reference-architecture proposal. It does not claim to reproduce any proprietary production system.
+
+## 📄 Research Paper
+
+**Event-Driven Music Recommendation Systems — IEEE Format**
+
+[![Read Paper](https://img.shields.io/badge/Read%20Paper-PDF-red?style=for-the-badge&logo=adobeacrobatreader)](./Event-Driven%20Music%20Recommendation%20Systems%20-%20IEEE%20Format.pdf)
+
+The paper discusses the architecture, processing pipelines, recommendation workflow, ranking strategy, evaluation methodology, scalability considerations, and limitations of the proposed design.
+
+## 🧩 System Architecture
+
+```text
+User Interactions
+       │
+       ▼
+┌──────────────────┐
+│   Apache Kafka   │
+│  Event Streaming │
+└────────┬─────────┘
+         │
+    ┌────┴─────┐
+    ▼          ▼
+Real-Time    Offline
+Pipeline     Pipeline
+    │          │
+    ▼          ▼
+Features   Model Training
+    │          │
+    └────┬─────┘
+         ▼
+ Candidate Generation
+         │
+         ▼
+       Ranking
+         │
+         ▼
+      Re-ranking
+         │
+         ▼
+ Recommendation Serving
+```
+
+## ⚙️ Key Components
+
+| Component | Purpose |
+|---|---|
+| **Apache Kafka** | Durable event streaming and event-log backbone |
+| **Stream Processing** | Processes fresh interaction signals in near real time |
+| **Batch Processing** | Offline feature generation and model-training workflows |
+| **Candidate Generation** | Retrieves potentially relevant tracks/items |
+| **Learning-to-Rank** | Scores and orders recommendation candidates |
+| **Re-ranking** | Balances relevance, freshness, diversity, and novelty |
+| **Serving Layer** | Delivers personalized recommendations with low latency |
+
+## 🔬 Research Focus
+
+The work examines the trade-offs involved in building recommendation systems around continuous event streams, with emphasis on:
+
+- ⚡ Low-latency personalization
+- 📈 Scalability
+- 🔄 Real-time + offline processing
+- 🎯 Candidate generation and ranking
+- 🆕 Freshness and novelty
+- 🎵 Recommendation diversity
+- 🛡️ Reliability
+- 📊 Offline evaluation and ranking metrics
+
+## 🧪 Proof of Concept
+
+The paper includes a proof-of-concept that exercises the recommendation scoring mechanism using **synthetic interaction data**.
+
+The results should therefore be interpreted as a validation of the scoring mechanics rather than as production performance benchmarks.
+
+## ⚠️ Scope & Limitations
+
+- The proposed architecture is not presented as a completed production deployment.
+- No end-to-end production benchmark is reported.
+- The proof-of-concept uses synthetic interaction data.
+- Real-world recommendation quality, latency, and scalability would require implementation and evaluation using realistic or production-scale interaction data.
+- Public information about Spotify is used only as a motivating reference; proprietary internal implementation details are not claimed.
+
+## 🔗 Resources
+
+| Resource | Link |
+|---|---|
+| 📄 **Technical Paper** | [Open PDF](./Event-Driven%20Music%20Recommendation%20Systems%20-%20IEEE%20Format.pdf) |
+| 🖥️ **Interactive Case Study** | [Open Case Study](https://lnkd.in/d6j6HcFR) |
+| 💼 **LinkedIn Profile** | [Jyatin Kumar Singh](https://www.linkedin.com/in/jyatinsingh/) |
+
+> **LinkedIn Post:** Add the published post URL here when the post is live. The currently available `lnkd.in/d6j6HcFR` link is kept as the interactive case-study link.
+
+## 👤 Author
+
+**Jyatin Kumar Singh**  
+B.Tech CSE · Lovely Professional University  
+2026
+
+## 📚 Citation
+
+> **Singh, Jyatin Kumar.** *Event-Driven Music Recommendation Systems: A Technical Case Study of Spotify-Style Recommendation Architecture Using Apache Kafka, Big Data and Machine Learning.* Lovely Professional University, 2026.
+
+---
+
+<p align="center">
+  <sub>Built as a technical research case study on event-driven recommendation architecture.</sub>
+</p>
